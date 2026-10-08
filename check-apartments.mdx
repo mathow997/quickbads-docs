@@ -1,0 +1,35 @@
+---
+title: "Check a floor plan"
+description: "Run a check, keep it live, and clear it."
+---
+
+## Check Apartments
+
+1. Open a floor plan view.
+2. Go to the **QuickBADS** tab and click **Check Apartments**.
+3. A report opens. It lists every apartment found on the level, what was checked and the result. Click **Close**.
+
+The fills, labels, circulation paths and apartment tags are now on the plan.
+
+QuickBADS finds apartments from your walls, doors and furniture. You don't need to place Revit rooms, and any rooms you have
+are not used for grading.
+
+## Live Update
+
+With **Live Update: On**, QuickBADS rechecks the level after every change, such as moving a wall, a bed or a table. The update
+waits until nothing is selected, so fills don't jump while you are still editing. Click the button to turn it off. You can still
+check by hand.
+
+<Tip>
+  Live update rechecks the whole level. On a large floor plate each update takes a few seconds. Turn Live Update off while you
+  make big changes, then click **Check Apartments**.
+</Tip>
+
+## Clear Fills
+
+**Clear Fills** removes everything QuickBADS drew in this view. It also drops any edits you made to fills, paths and storage
+(see [Edit the fills](/editing)). Apartment names and schedule values are stored on the entry doors, so they stay.
+
+## The report
+
+Each check writes the report to `last-report.txt` in the add-in folder, so you can keep it with your project records.
