@@ -1,0 +1,29 @@
+---
+title: "Apartment names and schedule"
+description: "How apartments are named, and the apartment schedule."
+---
+
+## Apartment names
+
+Each apartment is named after:
+
+1. the **model group type** its entry door sits in (e.g. `APT TYPE A01`; mirrored copies share the name), or
+2. the entry door's **Mark**, or
+3. `APT 1`, `APT 2`… if neither is set.
+
+The plan tag shows the name, the type (e.g. *1 BED + 1 BATH*) and *ACCESSIBLE* when the apartment passes D17/D18.
+
+## Apartment schedule
+
+Click **Apartment Schedule** to create a Revit schedule with one row per apartment type:
+
+| Column | |
+|---|---|
+| Apartment type, quantity | Quantity is Revit's own count |
+| BADS compliant | **YES**; **CHECK** when only unconfirmable items remain (e.g. a ground-floor garden); **NO** |
+| Accessible | D17 / D18 |
+| Internal storage (m³), external storage required (m³) | |
+| Additional internal area (m²) or balcony area (m²) | The one that doesn't apply reads N/A |
+
+The values are written onto each entry door, so they survive **Clear Fills**. Every apartment of a type gets that type's combined
+(worst) result. After the schedule is created, your own formatting is kept. Check each level once to fill in its rows.

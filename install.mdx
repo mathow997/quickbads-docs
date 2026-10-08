@@ -1,0 +1,42 @@
+---
+title: "Install"
+description: "Install QuickBADS for Revit 2027 on Windows."
+---
+
+## Requirements
+
+- Windows 10 or 11
+- Revit 2027
+- No admin rights needed. QuickBADS installs for your Windows user only.
+
+## Install
+
+<Steps>
+  <Step title="Close Revit">
+    Revit locks add-in files while it's open, so close it first.
+  </Step>
+  <Step title="Unzip the download">
+    Right-click the `QuickBADS-<version>.zip` file you downloaded, then click **Extract All…** and **Extract**.
+  </Step>
+  <Step title="Run Install.cmd">
+    Double-click `Install.cmd` in the extracted folder. A window lists where QuickBADS was installed. Press any key to close it.
+  </Step>
+  <Step title="Start Revit and allow the add-in">
+    Revit asks: *The publisher of this add-in could not be verified.* Click **Always Load**.
+  </Step>
+  <Step title="Find the QuickBADS tab">
+    Open a floor plan. The **QuickBADS** tab is on the ribbon.
+  </Step>
+</Steps>
+
+<Note>
+  QuickBADS installs into `%AppData%\Autodesk\Revit\Addins\2027`.
+</Note>
+
+## Update
+
+Close Revit and run `Install.cmd` from the new download. It replaces the old version.
+
+## Uninstall
+
+Close Revit, then double-click `Uninstall.cmd` in the folder you extracted.

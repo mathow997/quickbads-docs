@@ -1,0 +1,46 @@
+---
+title: "What is checked"
+description: "The standards QuickBADS checks, and how to read each fill."
+---
+
+## Colours
+
+| Colour | Meaning |
+|---|---|
+| **Green** | Passes |
+| **Orange** | Within 2% of the requirement (for example 7.9 m² against 8 m²), or something blocks a pass that needs your judgement. The label always says why. |
+| **Red** | Fails |
+| **Light green path** | Circulation route that passes |
+
+Every fill has a label with the requirement and what fits, for example *MAIN BED ALMOST · min 3.0 × 3.4 · fits 3.15 × 3.37*.
+
+## Rooms
+
+| Check | Standard |
+|---|---|
+| **Bedrooms** | Main bedroom 3.0 × 3.4 m, other bedrooms 3.0 × 3.0 m, measured to the inside wall faces (Table D11). |
+| **Living area** | Minimum width and area by bedroom count (10 m² or 12 m²). The fill sits against the facade glazing and spans wall to wall, with the depth needed to reach the area. |
+| **Bathrooms** | Adaptable bathroom layouts A and B (Table D4). Shower screens don't divide a bathroom. |
+| **Balcony** | Area and minimum depth by orientation and bedroom count (Table D5), using the model's True North. With no balcony, the equivalent internal area is checked instead (Table D6). Ground-floor apartments show **?** because gardens can't be checked yet. |
+
+## Storage
+
+Storage volume inside the apartment is checked against Table D6 by bedroom count. Storage fills are coloured by type:
+
+- **Brown**: full height
+- **Light blue**: under-bench
+- **Dark blue**: overhead
+
+Volumes are measured from each cupboard's real footprint and type height. Kitchen storage is inferred from the benches, less sinks,
+cooktops and appliances. Change the inferred dimensions in **QuickBADS → Storage**. The schedule shows how much external storage
+(e.g. a car-park cage) is still needed to reach the total.
+
+## Accessibility (D17 / D18)
+
+QuickBADS draws the accessible route from the entry to the main bedroom, and to the bathroom when there's no ensuite. It checks the
+width along that route (1.2 m) and the door clear openings. A door's clear opening is its leaf width minus 50 mm. For cavity sliders,
+the opening is the number in the type name (e.g. "Slider 850mm").
+
+Set the path widths in **Manage → Project Information**:
+- `BADS_PathWidthAccessible` (default 1200 mm; lower values are ignored)
+- `BADS_PathWidthStandard` (default 1000 mm)
